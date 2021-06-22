@@ -1,0 +1,298 @@
+<html>
+
+    <head>
+
+        <title>Responsive Ninja Photo Web App</title>
+        
+        <link rel = "stylesheet" 
+              type = "text/css" 
+              href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel = "stylesheet" 
+              href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+              integrity = "sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+              crossorigin = "anonymous" 
+              referrerpolicy = "no-referrer" />
+        <link rel = "stylesheet" 
+              type = "text/css" 
+              href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <style>
+            header {
+                background: url('img/man.jpg');
+                background-size: cover;
+                background-position: center;
+                min-height: 1000px;
+            }
+            @media screen and (max-width: 670px) {
+                header {
+                    min-height: 500px;
+                }
+            }
+            .section {
+                padding-top: 4vw;
+                padding-bottom: 4vw;
+            }
+            .tabs .indicator {
+                background-color: #1a237e;
+            }
+            .tabs .tab a:focus, .tabs .tab a:focus.active {
+                background: transparent;
+            }
+            p {
+                text-align: justify;
+            }
+        </style>  
+
+    </head>
+
+    <body>  
+
+        <header>
+            <nav class = "nav-wrapper transparent">
+                <div class = "container">
+                    <a href = "#" class = "brand-logo">Photo Ninja</a>
+                    <a href = "#" class = "sidenav-trigger" data-target = "mobile-menu">
+                        <i class = "material-icons">menu</i>
+                    </a>
+                    <ul class = "right hide-on-med-and-down">
+                        <li><a href = "#photos">Photo's</a></li>
+                        <li><a href = "#services">Services</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                        <li>
+                            <a href = "#" class = "btn-floating btn-small tooltipped indigo darken-4" data-tooltip = "Instagram">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "btn-floating btn-small tooltipped indigo darken-4" data-tooltip = "Facebook">
+                                <i class = "fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "btn-floating btn-small tooltipped indigo darken-4" data-tooltip = "Twitter">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "btn-floating btn-small tooltipped indigo darken-4" data-tooltip = "Pinterest">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class = "sidenav grey lighten-2" id = "mobile-menu">
+                        <li><a href = "#">Photo's</a></li>
+                        <li><a href = "#">Services</a></li>
+                        <li><a href = "#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <section class = "container section scrollspy" id = "photos">
+            <div class = "row">
+                <div class = "col s12 l4">
+                    <img src = "img/portrait.jpg" class = "responsive-img materialboxed">
+                </div>
+                <div class = "col s12 l6 offset-l1">
+                    <h2 class = "indigo-text text-darken-4">Portraits</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis rutrum sem, at dignissim arcu. Cras ut tincidunt 
+                        nisl, quis semper nisi. Aenean ac nibh purus. Donec fermentum dui eget elit faucibus convallis. Nam ac purus id turpis 
+                        varius placerat sed ac purus. Suspendisse non suscipit quam, vitae tristique libero. Nunc ornare nulla eu venenatis 
+                        euismod.
+                    </p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col s12 l4 push-l7 offset-l1">
+                    <img src = "img/city.jpg" class = "responsive-img materialboxed">
+                </div>
+                <div class = "col s12 l6 pull-l5 right-align offset-l1">
+                    <h2 class = "indigo-text text-darken-4">Cityscapes</h2>
+                    <p>
+                        Ut viverra congue mi vel malesuada. Morbi sem risus, iaculis a nibh pellentesque, scelerisque gravida risus. Donec ut 
+                        suscipit dolor, sit amet dictum nisi. Cras euismod vulputate viverra. Nam finibus dui in aliquam ullamcorper. Nulla 
+                        lobortis felis quis quam porta, ac tempus lacus cursus. Ut vehicula magna lorem, quis malesuada sem pulvinar vitae. 
+                        Vestibulum a eros lacus. 
+                    </p>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col s12 l4">
+                    <img src = "img/nature.jpg" class = "responsive-img materialboxed">
+                </div>
+                <div class = "col s12 l6 offset-l1">
+                    <h2 class = "indigo-text text-darken-4">Nature</h2>
+                    <p>
+                        Sed egestas eleifend sollicitudin. Curabitur pulvinar ullamcorper orci, sed aliquet lorem faucibus ac. Nunc sit amet 
+                        diam nec lacus viverra ullamcorper. Sed a condimentum augue. In sit amet urna massa. Morbi lacinia pulvinar ligula, 
+                        non euismod augue iaculis sed. In placerat pulvinar urna, porta blandit sapien ultrices et. Vivamus in molestie sem. 
+                        Integer id sapien nec velit elementum interdum nec vel lacus.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <div class = "parallax-container">
+            <div class = "parallax">
+                <img src = "img/street.jpg" class = "responsive-img">
+            </div>
+        </div>    
+
+        <section class = "container section scrollspy" id = "services">
+            <div class = "row">
+                <div class = "col s12 l4">
+                    <h2 class = "indigo-text text-darken-4">What I do . .</h2>
+                    <p>
+                        Pellentesque neque lorem, accumsan a nisi nec, vestibulum egestas eros. Nam eu tortor gravida, mattis sem scelerisque, 
+                        ultricies lectus. Fusce sodales a tortor sit amet malesuada. Curabitur ac accumsan enim, a fermentum ligula. Donec nulla 
+                        ante, pulvinar vel erat a, molestie vulputate est. Proin non vulputate libero, a sagittis neque. Nulla ante risus, maximus 
+                        eget mi sit amet, feugiat imperdiet felis. Vestibulum elementum, est a laoreet bibendum, felis lorem elementum nisl, a 
+                        malesuada sapien enim ac risus.
+                    </p>
+                </div>
+                <div class = "col s12 l6 offset-l2">
+                    <ul class = "tabs">
+                        <li class = "tab col s6">
+                            <a href = "#photography" class = "indigo-text text-darken-4">Photography</a>
+                        </li>
+                        <li class = "tab col s6">
+                            <a href = "#editing" class = "indigo-text text-darken-4">Editing</a>
+                        </li>
+                    </ul>
+                    <div class = "col s12" id = "photography">
+                        <p class = "flow-text indigo-text text-darken-4">Photography</p>
+                        <p>
+                            Suspendisse euismod justo ut tempus auctor. Sed risus erat, semper malesuada lorem et, scelerisque convallis est. 
+                            Vivamus eget massa posuere dui mattis commodo sit amet sed tellus. Curabitur risus leo, semper non ligula quis, 
+                            fermentum lobortis diam. Integer quis varius mi, consequat hendrerit neque. Sed ut blandit diam. Donec sapien 
+                            lacus, lobortis sit amet felis eget, ullamcorper tristique erat. Fusce et libero tristique, lobortis mi porta, 
+                            sodales nibh.
+                        </p>
+                    </div>
+                    <div class = "col s12" id = "editing">
+                        <p class = "flow-text indigo-text text-darken-4">Editing</p>
+                        <p>
+                            In posuere velit eu rhoncus commodo. Ut non fermentum tellus, ut condimentum nulla. Praesent eu lectus non massa 
+                            congue eleifend. Sed condimentum vel orci id semper. Aliquam posuere enim quis pulvinar bibendum. Interdum et 
+                            malesuada fames ac ante ipsum primis in faucibus. Nullam porttitor tincidunt magna, non maximus augue fringilla 
+                            in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eros velit, tristique vel turpis vel, 
+                            tristique commodo lacus. Etiam eu justo ut ipsum varius varius. Sed fringilla pellentesque arcu, et aliquet 
+                            ligula dignissim eget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class = "parallax-container">
+            <div class = "parallax">
+                <img src = "img/stars.jpg" class = "responsive-img">
+            </div>
+        </div>
+
+        <section class = "container section scrollspy" id = "contact">
+            <div class = "row">
+                <div class = "col s12 l5">
+                    <h2 class = "indigo-text text-darken-4">Get In Touch</h2>
+                    <p>
+                        Quisque ornare sed augue in gravida. Sed congue ante sit amet ligula feugiat accumsan. Nam bibendum nulla ac felis 
+                        pharetra, luctus tincidunt mauris ultricies. Maecenas augue lacus, porta vel massa et, venenatis ornare neque. Nullam 
+                        ex ex, lacinia id pulvinar vehicula, ultricies et dolor. Nunc lobortis magna odio, id pulvinar sem ultricies pharetra.
+                        Maecenas sagittis lobortis est, a blandit ante dignissim ac. Suspendisse maximus suscipit tempus. In eleifend volutpat
+                        velit lobortis dapibus. Proin eu lorem et eros ultricies euismod. Cras vitae massa et felis congue molestie.
+                    </p>
+                </div>
+                <div class = "col s12 l5 offset-l2">
+                    <form>
+                        <div class = "input-field">
+                            <i class = "material-icons prefix">email</i>
+                            <input type = "email" id = "email">
+                            <label for = "email">Your Mail</label>
+                        </div>
+                        <div class = "input-field">
+                            <i class = "material-icons prefix">message</i>
+                            <textarea class = "materialize-textarea" id = "message"></textarea>
+                            <label for = "message">Your Word</label>    
+                        </div>
+                        <div class = "input-field">
+                            <input type = "text" class = "datepicker" id = "date">
+                            <label for = "date">Pick D-Day</label>
+                        </div>
+                        <div class = "input-field">
+                            <div>
+                                <h5>Proforma Queried</h5>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type = "checkbox">
+                                    <span>Photography</span>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type = "checkbox">
+                                    <span>Videography</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "input-field right">
+                            <button class = "btn">Push The Bell</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class = "page-footer grey darken-3">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col s12 l6">
+                        <h5>About Ninja</h5>
+                        <p>
+                            Mauris risus nisl, laoreet sed ante non, mattis blandit enim. Suspendisse placerat venenatis massa, at fringilla 
+                            leo ullamcorper in. Aliquam sit amet iaculis ipsum, id pellentesque orci. Aenean nec rutrum libero. Vestibulum 
+                            dapibus vitae augue sit amet lobortis. Donec tincidunt lacinia tortor, nec congue lacus vehicula quis. Morbi 
+                            fringilla maximus felis, a semper quam pulvinar eu. Fusce tempor luctus arcu, eleifend ullamcorper tellus molestie
+                            sit amet. Suspendisse nisi libero, blandit at velit eget, mollis ultrices metus. 
+                        </p>    
+                    </div>
+                    <div class = "col s12 l4 offset-l2">
+                        <h5>Be With Ninja</h5>
+                        <ul>
+                            <li><a href = "#" class = "grey-text text-lighten-3">Facebook</a></li>
+                            <li><a href = "#" class = "grey-text text-lighten-3">Twitter</a></li>
+                            <li><a href = "#" class = "grey-text text-lighten-3">Instagram</a></li>
+                            <li><a href = "#" class = "grey-text text-lighten-3">Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "footer-copyright grey darken-4">
+                <div class = "container center-align">
+                    &copy; 2021 Ninja Dev
+                </div>
+            </div>
+        </footer>
+
+
+        <script type = "text/javascript" 
+                src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type = "text/javascript" 
+                src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <script>
+          $(document).ready(function() {
+              $('.sidenav').sidenav();
+              $('.materialboxed').materialbox();
+              $('.parallax').parallax();
+              $('.tabs').tabs();
+              $('.datepicker').datepicker({ disableWeekends: true });
+              $('.tooltipped').tooltip();
+              $('.scrollspy').scrollSpy();
+          });
+        </script>  
+
+    </body>
+    
+</html>
